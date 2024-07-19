@@ -14,7 +14,4 @@ public class User {
     private String username;
     private String password;
     private double balance;
-
-    @JoinColumn(name = "wallet_id")
-    private Wallet wallet;
 }
