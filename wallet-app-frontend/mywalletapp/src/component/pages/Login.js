@@ -3,7 +3,7 @@ import UserContext from '../context/Context';
 import axios from 'axios';
 
 const Login = () => {
-    const { username, setUsername, password, setPassword, email, setEmail } = useContext(UserContext);
+    const { username, setUsername, password, setPassword } = useContext(UserContext);
 
     const [message, setMessage] = useState('');
 
@@ -12,7 +12,7 @@ const Login = () => {
         setMessage('');
 
         try {
-            const response = await axios.post('/api/auth/signin', { username, password });
+            const response = await axios.post('/auth/signin', { username, password });
             const { token } = response.data;
 
             // Save the token to localStorage or a state management store like Redux
@@ -20,7 +20,7 @@ const Login = () => {
 
             // Redirect to a different page or show a success message
             setMessage('Login successful!');
-            // window.location.href = '/dashboard'; // Example of redirection after login
+            window.location.href = '/dashboard'; // Example of redirection after login
         } catch (error) {
             setMessage('Login failed. Please check your username and password.');
         }

@@ -107,53 +107,69 @@ const Hero = () => {
             <div className="mx-20 mt-14 absolute -z-10 ">
 
               {/*Stylus for cards */}
-              {/* <motion.svg width="657" height="683">
-                <defs>
-                  <linearGradient
-                    id="customGradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="100%"
-                    y2="0%"
-                  >
-                    <stop offset="0%" stopColor="#97203E" />
-                    <stop offset="100%" stopColor="#FF3800" />
-                  </linearGradient>
-                </defs>
-                <motion.path
-                  initial={{ pathLength: 0, pathSpacing: 0.4 }}
-                  whileInView={{ pathLength: 1, pathSpacing: 0.4 }}
-                  transition={{
-                    pathLength: {
-                      delay: 0.4,
-                      type: "tween",
-                      duration: 10,
-                      ease: "linear",
-                      // repeat: Infinity,
-                      bounce: 0,
-                    },
-                  }}
-                  className=""
-                  strokeDasharray="3.846, 2.282"
-                  strokeDashoffset="0"
-                  strokeWidth="3.641"
-                  id="svgPath"
-                  stroke="url(#customGradient)"
-                  fill="none"
-                  d="M 350 50 Q 150 200 350 300 Q 650 400 350 600 "
-                  transform=" "
-                ></motion.path>
-                <path
-                  id=""
-                  stroke="#97203E"
-                  strokeDasharray="3.846, 2.282"
-                  strokeDashoffset="0"
-                  strokeWidth="1.641"
-                  fill="none"
-                  d="M 350 50 Q 150 200 350 300 Q 650 400 350 600 "
-                  transform=""
-                ></path>
-              </motion.svg> */}
+              <motion.svg width="657" height="683">
+              <defs>
+                <linearGradient
+                        id="customGradient"
+                        x1="400"
+                        y1="50"
+                        x2="657"
+                        y2="50"
+                >
+                  <stop offset="0%" stopColor="" />
+                  <stop offset="100%" stopColor="#0096FF" />
+                </linearGradient>
+              </defs>
+              <motion.path
+                initial={{ pathLength: 0, pathSpacing: 0.4 }}
+                whileInView={{ pathLength: 1, pathSpacing: 0.4 }}
+                transition={{
+                  pathLength: {
+                    delay: 0.4,
+                    type: "tween",
+                    duration: 10,
+                    ease: "linear",
+                    // repeat: Infinity,
+                    bounce: 0,
+                  },
+                }}
+                className=""
+                strokeDasharray="3.846, 2.282"
+                strokeDashoffset="0"
+                strokeWidth="3.641"
+                id="svgPath"
+                stroke="url(#customGradient)"
+                fill="none"
+                d="M 440 50 Q 240 190 420 300 Q 650 400 450 600"
+                transform=" "
+              >
+                
+              </motion.path>
+              <path
+                id=""
+                stroke="#0047AB"
+                strokeDasharray="3.846, 2.282"
+                strokeDashoffset="0"
+                strokeWidth="1.641"
+                fill="none"
+                d="M 440 50 Q 240 190 420 300 Q 650 400 450 600"
+                transform=""
+              ></path>
+            </motion.svg>
+
+              {/* Arrow Animation 2
+
+                        <motion.div
+                initial={{ y: -50 }}
+                animate={{ y: 50 }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                  repeatType: 'reverse'
+                }}
+              >
+                ⬇️
+              </motion.div> */}
 
             </div>
 
